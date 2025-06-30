@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul>
+        <li><a href="dashboard.html" class="active"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="stocks.html"><i class="fas fa-boxes"></i> Stock Management</a></li>
+        <!-- Future: Add link for Expenses if you want -->
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>Welcome, Admin</h1>
+
+      <section class="card-group">
+        <div class="card sales">
+          <h2>Sales Overview</h2>
+          <p><strong>Today:</strong> ₱<span id="sales-today">0</span></p>
+          <p><strong>Yesterday:</strong> ₱<span id="sales-yesterday">0</span></p>
+          <p><strong>This Month:</strong> ₱<span id="sales-month">0</span></p>
+        </div>
+
+        <div class="card stocks">
+          <h2>Current Stocks</h2>
+          <ul id="stock-list"></ul>
+        </div>
+
+        <div class="card expenses">
+          <h2>Expenses This Month</h2>
+          <p>Total: ₱<span id="expenses-total">0</span></p>
+          <ul id="expenses-list"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

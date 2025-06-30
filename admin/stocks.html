@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stock Management</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/stocks.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul>
+        <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="stocks.html" class="active"><i class="fas fa-boxes"></i> Stock Management</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>📦 Stock Management</h1>
+      <p class="note">Update the quantity of available items below. Low stock items are highlighted.</p>
+      <div id="stock-container" class="stock-container">
+        <!-- Dynamic content -->
+      </div>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
